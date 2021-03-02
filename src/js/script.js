@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
   /* Contacts spoiler */
-
+  console.log('loaded');
   const
     contactsBtn = document.querySelector('.contacts__spoiler-btn'),
     contacts = document.querySelector('.header__contacts'),
@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('no-overflow')
 
   }
-})
+}
