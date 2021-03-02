@@ -621,12 +621,12 @@ body {
 
 .categories__list {
   display: flex;
-  row-gap: 25px;
   flex-wrap: wrap;
 }
 
 .categories__item {
   margin-right: 20px;
+  margin-bottom: 25px;
   display: block;
 }
 
