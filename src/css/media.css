@@ -58,8 +58,10 @@
 
 @media screen and (max-width: 768px) {
 
+  .new-collection {
+    background-position-x: 22%;
+  }
   .collection-2018__image {
-    /* flex-direction: column; */
     display: none;
   }
   .collection-2018__description {
@@ -120,6 +122,9 @@
   }
   .hero__logo-city {
     font-size: 18px;
+  }
+  .new-collection {
+    min-height: 530px;
   }
 
 }
