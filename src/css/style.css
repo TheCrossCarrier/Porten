@@ -234,7 +234,7 @@ body {
   width: 33px;
   height: 2px;
   display: block;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .burger-btn__bar::before,
@@ -244,7 +244,7 @@ body {
   left: 0;
   height: inherit;
   width: inherit;
-  background-color: var(--white);
+  background-color: inherit;
 }
 
 .burger-btn__bar::before {
@@ -277,7 +277,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 4px solid var(--white);
+  border: 4px solid white;
+  /* border: 4px solid var(--white); */
 }
 
 .hero__logo {
@@ -295,7 +296,7 @@ body {
   transform: translateX(-50%);
   width: 97%;
   height: 2px;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .hero__logo-city {
