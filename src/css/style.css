@@ -286,7 +286,9 @@ body {
 .hero__logo::after {
   content: '';
   position: absolute;
+  left: 50%;
   bottom: 3px;
+  transform: translateX(-50%);
   width: 97%;
   height: 2px;
   background-color: currentColor;
