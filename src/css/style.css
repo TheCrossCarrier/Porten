@@ -64,6 +64,10 @@ body {
   align-items: center;
 }
 
+.contacts__phone > span {
+  white-space: nowrap;
+}
+
 .contacts__phone-icon {
   margin-right: 16.3px;
   height: 13.3px;
