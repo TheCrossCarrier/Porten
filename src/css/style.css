@@ -244,7 +244,7 @@ body {
   left: 0;
   height: inherit;
   width: inherit;
-  background-color: inherit;
+  background-color: var(--white);
 }
 
 .burger-btn__bar::before {
