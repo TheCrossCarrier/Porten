@@ -1,19 +1,23 @@
 @font-face {
   font-family: 'PT Sans Regular';
   src: url(../fonts/PTSans-Regular.ttf) format('truetype');
+  display: swap;
 }
 
 @font-face {
   font-family: 'Post No Bills Jaffna Bold';
   src: url(../fonts/PostNoBillsJaffna-Bold.ttf) format('truetype');
+  display: swap;
 }
 
 @font-face {
   font-family: 'Playfair Display Regular';
   src: url(../fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+  display: swap;
 }
 
 @font-face {
   font-family: 'Playfair Display Bold';
   src: url(../fonts/PlayfairDisplay-Bold.ttf) format('truetype');
+  display: swap;
 }
