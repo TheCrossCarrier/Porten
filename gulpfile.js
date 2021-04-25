@@ -5,10 +5,10 @@ import htmlmin from 'gulp-htmlmin'
 import autoPrefixer from 'gulp-autoprefixer'
 import concat from 'gulp-concat'
 import pxtorem from 'gulp-pxtorem'
-import csso from 'gulp-csso'
 import replace from 'gulp-replace'
-import babel from 'gulp-babel'
+import csso from 'gulp-csso'
 import uglify from 'gulp-uglify'
+import imagemin from 'gulp-imagemin'
 import { stream, init, reload, create } from 'browser-sync'
 
 const html = () => src('src/**/*.html')
@@ -30,7 +30,7 @@ const css = () => src([
   .pipe(concat('style.css'))
   .pipe(autoPrefixer())
   .pipe(pxtorem({
-    rootValue: 12,
+    rootValue: 16,
     unitPrecision: 4,
     propList: ['*']
   }))
@@ -40,15 +40,13 @@ const css = () => src([
   .pipe(stream())
 
 const js = () => src('src/js/**/*.js')
-  .pipe(babel({
-    presets: ['@babel/env']
-  }))
   .pipe(concat('script.js'))
   .pipe(uglify())
   .pipe(dest('dist/js'))
   .pipe(stream())
 
 const img = () => src('src/img/**/*')
+  .pipe(imagemin())
   .pipe(dest('dist/img'))
   .pipe(stream())
 
@@ -73,11 +71,13 @@ const serve = () => {
 
 export const clean = () => del('dist')
 
-export default series(
+export const dev = series(
   clean,
   parallel(css, js, img, fonts, html),
   serve
 )
+
+export default dev
 
 export const build = series(
   clean,
