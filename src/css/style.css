@@ -1,10 +1,13 @@
 :root {
-  --white:       #ffffff;
-  --black:       #000000;
+  --rem: 12Px;
+  --white: #ffffff;
+  --black: #000000;
   --light-black: #0f0f0f;
-  --gray:        #969696;
-  --light-gray:  #d0d0d0;
+  --gray: #969696;
+  --light-gray: #d0d0d0;
 }
+
+html { font-size: var(--rem) }
 
 body {
   color: var(--white);

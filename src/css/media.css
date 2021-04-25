@@ -111,7 +111,7 @@
 
 @media screen and (max-width: 375px) {
   :root {
-    font-size: 14Px;
+    --rem: 10Px;
   }
   .hero__rect {
     width: 210px;
